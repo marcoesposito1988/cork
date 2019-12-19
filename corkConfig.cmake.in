@@ -1,0 +1,8 @@
+
+get_filename_component(cork_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
+
+if(NOT TARGET Cork::Cork)
+    include("${cork_CMAKE_DIR}/corkTargets.cmake")
+endif()
+
+set(cork_LIBRARIES Cork::Cork)
